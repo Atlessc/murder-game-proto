@@ -1,0 +1,35 @@
+.GameConatiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    padding: 0;
+    border: 1px solid #ffffff;
+}
+
+.POV {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+    width: 90vw;
+    border: 1px solid #ffffff;
+    padding: 0;
+    z-index: 0;
+}
+
+.TextBox {
+    position: absolute;
+    bottom: 20px;
+    z-index: 999;
+    height: 90px;
+    width: 80%;
+    color: black;
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+}
+
