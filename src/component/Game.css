@@ -1,11 +1,12 @@
 .GameConatiner {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 75vh;
-    padding: 0;
-    border: 1px solid #ffffff;
+    height: 90vh;
+    padding: 1rem;
+
 }
 
 .POV {
@@ -13,23 +14,43 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 1000px;
-    width: 90vw;
-    border: 1px solid #ffffff;
+    height: 100%;
+    width: 95vw;
     padding: 0;
-    z-index: 0;
+    z-index: -1;
+    border: 2px solid #000000;
+    background-color: #646cff;
+    border-radius: 1rem;
 }
 
 .TextBox {
     position: absolute;
-    bottom: 20px;
-    z-index: 999;
-    height: 90px;
-    width: 80%;
+    bottom: 4%;
+    left: 3%;
+    z-index: 10;
+    height: 60px;
+    width: 45%;
     color: black;
     text-align: left;
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
     background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 1rem;
 }
 
+.NotePad {
+    position: absolute;
+    bottom: 4%;
+    right: 3%;
+    z-index: 11;
+    height: 300px;
+    width: 120px;
+    color: black;
+    text-align: left;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 1rem;
+}

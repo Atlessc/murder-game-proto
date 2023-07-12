@@ -12,7 +12,7 @@ function App() {
   }
 
   return (
-      <div>
+      <div className='AppContainer'>
         
         {
           showPopUp ?
@@ -24,7 +24,6 @@ function App() {
         }
         <div className='App'>
           <div className='header'>
-            <h1 className='title'>The Halls Whisper MURDER!</h1>
             <div className='MenuBtn' onClick={TogglePopup}>☰</div>
           </div>
           <GameContainer />

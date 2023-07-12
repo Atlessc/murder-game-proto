@@ -1,23 +1,32 @@
 #root {
+  box-sizing: border-box;
   max-width: 1280px;
   margin: 0 auto;
   padding: 1.5rem;
   text-align: center;
 }
 
+.AppContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  padding: 0;
+}
+
 .App {
   text-align: center;
-  width: 90vw;
+  width: 99vw;
 }
 
 .header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
+  justify-content: flex-end;
   height: 60px;
-  border: 2px solid #ffffff;
 }
 
 .title {
@@ -26,17 +35,19 @@
 }
 
 .MenuBtn {
+  position: absolute;
+  top: 5;
+  right: 0;
   background-color: #646cff;
   color: #ffffff;
-  border: none;
+  border: 2px solid #000000;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
   margin: 1rem;
-
 }
 
 .popup {
@@ -51,7 +62,7 @@
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  border: 2px solid white;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 1.5rem;
   z-index: 100;
   opacity: 100%;
@@ -64,7 +75,7 @@
 .startBtn {
   background-color: #646cff;
   color: #ffffff;
-  border: none;
+  border: 2px solid #000000;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
