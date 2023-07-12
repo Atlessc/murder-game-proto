@@ -7,7 +7,7 @@ export default function GameContainer() {
 
     return (
         <div className="GameConatiner">
-            <div className="POV">Visuals</div>
+            <div className="POV">Game Coming Soon</div>
             <div className="NotePad">Notepad</div>
             {showDialog ? null:
             <div className="TextBox">Suspect Dialog</div>}

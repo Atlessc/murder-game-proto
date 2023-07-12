@@ -21,14 +21,6 @@
   width: 99vw;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  height: 60px;
-}
-
 .title {
   font-size: 2.2rem;
   color: #ffffff;
@@ -36,9 +28,9 @@
 
 .MenuBtn {
   position: absolute;
-  top: 5;
-  right: 0;
-  background-color: #646cff;
+  top: 5%;
+  right: 3%;
+  background-color: #ff4747;
   color: #ffffff;
   border: 2px solid #000000;
   border-radius: 0.5rem;
@@ -73,7 +65,7 @@
 }
 
 .startBtn {
-  background-color: #646cff;
+  background-color: #ff4747;
   color: #ffffff;
   border: 2px solid #000000;
   border-radius: 0.5rem;

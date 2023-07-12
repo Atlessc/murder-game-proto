@@ -23,9 +23,7 @@ function App() {
           : null
         }
         <div className='App'>
-          <div className='header'>
             <div className='MenuBtn' onClick={TogglePopup}>☰</div>
-          </div>
           <GameContainer />
         </div>
 
