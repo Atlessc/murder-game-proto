@@ -42,13 +42,13 @@
     border-radius: 1rem;
 }
 
-.NotePad {
+.ActionBtn {
     position: absolute;
     bottom: 4%;
     right: 3%;
     z-index: 11;
-    height: 300px;
-    width: 120px;
+    height: 50px;
+    width: 70px;
     color: black;
     text-align: left;
     padding: 1rem;
@@ -56,4 +56,41 @@
     background-color: #ffffff;
     border: 3px solid #000000;
     border-radius: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.ActionMenu {
+    position: absolute;
+    bottom: 4%;
+    right: 3%;
+    z-index: 11;
+    height: 200px;
+    width: 110px;
+    color: black;
+    text-align: left;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ActionItems {
+    margin: 0.3rem 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 90%;
+    padding: 3px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
 }
