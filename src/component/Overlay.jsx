@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import './Overlay.css'
+import Game from "./Game";
+
 
 export default function GameContainer() {
 
