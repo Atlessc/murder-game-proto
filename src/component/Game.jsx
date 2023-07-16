@@ -6,9 +6,7 @@ const characters = data.Characters;
 const rooms = data.Rooms;
 const weapons = data.Weapons;
 
-// console.log(characters.map(character => character.name));
-// console.log(rooms.map(room => room.name));
-// console.log(weapons.map(weapon => weapon.name));
+
 
 const CharacterRoomTracker = {
     "Foyer": [],

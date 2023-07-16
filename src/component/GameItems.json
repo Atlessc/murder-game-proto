@@ -6,23 +6,28 @@
     "Characters": [
         {
             "id": 1,
-            "name": "Char1"
+            "name": "Ms. Audrey Montague",
+            "nickname": "Ms. Montague"
         },
         {
             "id": 2,
-            "name": "Char2"
+            "name": "Lady Alice Underwood",
+            "nickname": "Lady Underwood"
         },
         {
             "id": 3,
-            "name": "Char3"
+            "name": "Duke Alfred Parker",
+            "nickname": "Duke Parker"
         },
         {
             "id": 4,
-            "name": "Char4"
+            "name": "Miss Daisy Pennington",
+            "nickname": "Miss Pennington"
         },
         {
             "id": 5,
-            "name": "Char5"
+            "name": "Sir Frederick Caldwell",
+            "nickname": "Sir Caldwell"
         },
         {
             "id": 6,
@@ -46,6 +51,11 @@
             "name": "Char10"
         }
     ],
+    "Victim": {
+        "id": 1,
+        "name": "Dr. Charles Warwick",
+        "nickname": "Dr. Warwick"
+    },
     "Rooms": [
         {
             "id": 1,
