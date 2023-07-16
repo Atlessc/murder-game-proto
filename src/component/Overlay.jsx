@@ -20,9 +20,9 @@ export default function GameContainer() {
             <div className="ActionMenu">
                 <div className="ActionItems">Notes</div>
                 <div className="ActionItems">Rooms</div>
-                <div className="ActionItems">Talk</div>
+                <div className="ActionItems">Interview</div>
                 <div className="ActionItems">Accuse</div>
-                <div className="ActionItems" onClick={ToggleActionMenu}>Close</div>
+                <div className="ActionItems Close" onClick={ToggleActionMenu}>Close</div>
             </div>
             :
             <div className="ActionBtn" onClick={ToggleActionMenu}>☰</div>}
