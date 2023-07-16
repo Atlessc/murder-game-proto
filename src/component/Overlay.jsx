@@ -12,6 +12,7 @@ export default function Overlay() {
         setShowActionMenu(!showActionMenu)
     }
 
+
     return (
         <div className="Overlay">
             <div className="POV"><Game /></div>

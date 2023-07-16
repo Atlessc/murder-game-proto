@@ -1,4 +1,8 @@
 {
+    "Player": {
+        "id": 1,
+        "name": "Detective"
+    },
     "Characters": [
         {
             "id": 1,
@@ -45,31 +49,31 @@
     "Rooms": [
         {
             "id": 1,
-            "name": "Room1"
+            "name": "Foyer"
         },
         {
             "id": 2,
-            "name": "Room2"
+            "name": "Dining Room"
         },
         {
             "id": 3,
-            "name": "Room3"
+            "name": "Kitchen"
         },
         {
             "id": 4,
-            "name": "Room4"
+            "name": "Art Studio"
         },
         {
             "id": 5,
-            "name": "Room5"
+            "name": "Library"
         },
         {
             "id": 6,
-            "name": "Room6"
+            "name": "Living Room"
         },
         {
             "id": 7,
-            "name": "Room7"
+            "name": "Master Bedroom"
         }
     ],
     "Weapons": [
