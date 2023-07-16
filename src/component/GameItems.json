@@ -1,0 +1,137 @@
+{
+    "Characters": [
+        {
+            "id": 1,
+            "name": "Char1"
+        },
+        {
+            "id": 2,
+            "name": "Char2"
+        },
+        {
+            "id": 3,
+            "name": "Char3"
+        },
+        {
+            "id": 4,
+            "name": "Char4"
+        },
+        {
+            "id": 5,
+            "name": "Char5"
+        },
+        {
+            "id": 6,
+            "name": "Char6"
+        },
+        {
+            "id": 7,
+            "name": "Char7"
+
+        },
+        {
+            "id": 8,
+            "name": "Char8"
+        },
+        {
+            "id": 9,
+            "name": "Char9"
+        },
+        {
+            "id": 10,
+            "name": "Char10"
+        }
+    ],
+    "Rooms": [
+        {
+            "id": 1,
+            "name": "Room1"
+        },
+        {
+            "id": 2,
+            "name": "Room2"
+        },
+        {
+            "id": 3,
+            "name": "Room3"
+        },
+        {
+            "id": 4,
+            "name": "Room4"
+        },
+        {
+            "id": 5,
+            "name": "Room5"
+        },
+        {
+            "id": 6,
+            "name": "Room6"
+        },
+        {
+            "id": 7,
+            "name": "Room7"
+        }
+    ],
+    "Weapons": [
+        {
+            "id": 1,
+            "name": "Weapon1"
+        },
+        {
+            "id": 2,
+            "name": "Weapon2"
+        },
+        {
+            "id": 3,
+            "name": "Weapon3"
+        },
+        {
+            "id": 4,
+            "name": "Weapon4"
+        },
+        {
+            "id": 5,
+            "name": "Weapon5"
+        },
+        {
+            "id": 6,
+            "name": "Weapon6"
+        },
+        {
+            "id": 7,
+            "name": "Weapon7"
+        },
+        {
+            "id": 8,
+            "name": "Weapon8"
+        },
+        {
+            "id": 9,
+            "name": "Weapon9"
+        },
+        {
+            "id": 10,
+            "name": "Weapon10"
+        },
+        {
+            "id": 11,
+            "name": "Weapon11"
+        },
+        {
+            "id": 12,
+            "name": "Weapon12"
+        },
+        {
+            "id": 13,
+            "name": "Weapon13"
+        },
+        {
+            "id": 14,
+            "name": "Weapon14"
+        },
+        {
+            "id": 15,
+            "name": "Weapon15"
+        }
+    ]
+}

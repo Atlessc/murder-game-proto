@@ -1,0 +1,298 @@
+{
+    "IsMurderer": [
+        {
+            "dialog":[
+                {
+                    "id": 1,
+                    "Text": "1.lorem ipsum dolor sit amet.1"
+                },
+                {
+                    "id": 2,
+                    "Text": "2.lorem ipsum dolor sit amet.2"
+                },
+                {
+                    "id": 3,
+                    "Text": "3.lorem ipsum dolor sit amet.3"
+                },
+                {
+                    "id": 4,
+                    "Text": "4.lorem ipsum dolor sit amet.4"
+                },
+                {
+                    "id": 5,
+                    "Text": "5.lorem ipsum dolor sit amet.5"
+                },
+                {
+                    "id": 6,
+                    "Text": "6.lorem ipsum dolor sit amet.6"
+                }
+            ]
+        },
+        {
+            "BigReveal": "BIGREVEAL.lorem ipsum dolor sit amet.BIGREVEAL"
+        }
+    ],
+    "IsNotMurderer": [
+        {
+            "Murderer": "Char1",
+            "dialog": [
+                {
+                    "id": 1,
+                    "Text": "1.lorem ipsum dolor sit amet.1"
+                },
+                {
+                    "id": 2,
+                    "Text": "2.lorem ipsum dolor sit amet.2"
+                },
+                {
+                    "id": 3,
+                    "Text": "3.lorem ipsum dolor sit amet.3"
+                },
+                {
+                    "id": 4,
+                    "Text":"4.lorem ipsum dolor sit amet.4"
+                },
+                {
+                    "id": 5,
+                    "Text":"5.lorem ipsum dolor sit amet.5"
+                },
+                {
+                    "id": 6,
+                    "Text":"6.lorem ipsum dolor sit amet.6"
+                }
+            ]
+        },
+        {
+            "Murderer": "Char2",
+            "dialog": [
+                {
+                    "id": 1,
+                    "Text": "1.lorem ipsum dolor sit amet.1"
+                },
+                {
+                    "id": 2,
+                    "Text": "2.lorem ipsum dolor sit amet.2"
+                },
+                {
+                    "id": 3,
+                    "Text": "3.lorem ipsum dolor sit amet.3"
+                },
+                {
+                    "id": 4,
+                    "Text":"4.lorem ipsum dolor sit amet.4"
+                },
+                {
+                    "id": 5,
+                    "Text":"5.lorem ipsum dolor sit amet.5"
+                },
+                {
+                    "id": 6,
+                    "Text":"6.lorem ipsum dolor sit amet.6"
+                }
+            ]
+        },
+        {
+            "Murderer": "Char3",
+            "dialog": [
+                {
+                    "id": 1,
+                    "Text": "1.lorem ipsum dolor sit amet.1"
+                },
+                {
+                    "id": 2,
+                    "Text": "2.lorem ipsum dolor sit amet.2"
+                },
+                {
+                    "id": 3,
+                    "Text": "3.lorem ipsum dolor sit amet.3"
+                },
+                {
+                    "id": 4,
+                    "Text":"4.lorem ipsum dolor sit amet.4"
+                },
+                {
+                    "id": 5,
+                    "Text":"5.lorem ipsum dolor sit amet.5"
+                },
+                {
+                    "id": 6,
+                    "Text":"6.lorem ipsum dolor sit amet.6"
+                }
+            ]
+        },
+        {
+            "Murderer": "Char4",
+            "dialog": [
+                {
+                    "id": 1,
+                    "Text": "1.lorem ipsum dolor sit amet.1"
+                },
+                {
+                    "id": 2,
+                    "Text": "2.lorem ipsum dolor sit amet.2"
+                },
+                {
+                    "id": 3,
+                    "Text": "3.lorem ipsum dolor sit amet.3"
+                },
+                {
+                    "id": 4,
+                    "Text":"4.lorem ipsum dolor sit amet.4"
+                },
+                {
+                    "id": 5,
+                    "Text":"5.lorem ipsum dolor sit amet.5"
+                },
+                {
+                    "id": 6,
+                    "Text":"6.lorem ipsum dolor sit amet.6"
+                }
+            ]
+        },
+        {
+            "Murderer": "Char5",
+            "dialog": [
+                {
+                    "id": 1,
+                    "Text": "1.lorem ipsum dolor sit amet.1"
+                },
+                {
+                    "id": 2,
+                    "Text": "2.lorem ipsum dolor sit amet.2"
+                },
+                {
+                    "id": 3,
+                    "Text": "3.lorem ipsum dolor sit amet.3"
+                },
+                {
+                    "id": 4,
+                    "Text":"4.lorem ipsum dolor sit amet.4"
+                },
+                {
+                    "id": 5,
+                    "Text":"5.lorem ipsum dolor sit amet.5"
+                },
+                {
+                    "id": 6,
+                    "Text":"6.lorem ipsum dolor sit amet.6"
+                }
+            ]
+        },
+        {
+            "Murderer": "Char6",
+            "dialog": [
+                {
+                    "id": 1,
+                    "Text": "1.lorem ipsum dolor sit amet.1"
+                },
+                {
+                    "id": 2,
+                    "Text": "2.lorem ipsum dolor sit amet.2"
+                },
+                {
+                    "id": 3,
+                    "Text": "3.lorem ipsum dolor sit amet.3"
+                },
+                {
+                    "id": 4,
+                    "Text":"4.lorem ipsum dolor sit amet.4"
+                },
+                {
+                    "id": 5,
+                    "Text":"5.lorem ipsum dolor sit amet.5"
+                },
+                {
+                    "id": 6,
+                    "Text":"6.lorem ipsum dolor sit amet.6"
+                }
+            ]
+        },
+        {
+            "Murderer": "Char7",
+            "dialog": [
+                {
+                    "id": 1,
+                    "Text": "1.lorem ipsum dolor sit amet.1"
+                },
+                {
+                    "id": 2,
+                    "Text": "2.lorem ipsum dolor sit amet.2"
+                },
+                {
+                    "id": 3,
+                    "Text": "3.lorem ipsum dolor sit amet.3"
+                },
+                {
+                    "id": 4,
+                    "Text":"4.lorem ipsum dolor sit amet.4"
+                },
+                {
+                    "id": 5,
+                    "Text":"5.lorem ipsum dolor sit amet.5"
+                },
+                {
+                    "id": 6,
+                    "Text":"6.lorem ipsum dolor sit amet.6"
+                }
+            ]
+        },
+        {
+            "Murderer": "Char8",
+            "dialog": [
+                {
+                    "id": 1,
+                    "Text": "1.lorem ipsum dolor sit amet.1"
+                },
+                {
+                    "id": 2,
+                    "Text": "2.lorem ipsum dolor sit amet.2"
+                },
+                {
+                    "id": 3,
+                    "Text": "3.lorem ipsum dolor sit amet.3"
+                },
+                {
+                    "id": 4,
+                    "Text":"4.lorem ipsum dolor sit amet.4"
+                },
+                {
+                    "id": 5,
+                    "Text":"5.lorem ipsum dolor sit amet.5"
+                },
+                {
+                    "id": 6,
+                    "Text":"6.lorem ipsum dolor sit amet.6"
+                }
+            ]
+        },
+        {
+            "Murderer": "Char9",
+            "dialog": [
+                {
+                    "id": 1,
+                    "Text": "1.lorem ipsum dolor sit amet.1"
+                },
+                {
+                    "id": 2,
+                    "Text": "2.lorem ipsum dolor sit amet.2"
+                },
+                {
+                    "id": 3,
+                    "Text": "3.lorem ipsum dolor sit amet.3"
+                },
+                {
+                    "id": 4,
+                    "Text":"4.lorem ipsum dolor sit amet.4"
+                },
+                {
+                    "id": 5,
+                    "Text":"5.lorem ipsum dolor sit amet.5"
+                },
+                {
+                    "id": 6,
+                    "Text":"6.lorem ipsum dolor sit amet.6"
+                }
+            ]
+        }
+    ]
+}

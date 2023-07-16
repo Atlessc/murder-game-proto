@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import WelcomePopup from './component/WelcomePopUp'
-import GameContainer from './component/Overlay';
+import Overlay from './component/Overlay';
 
 function App() {
 
@@ -30,7 +30,7 @@ function App() {
                 <rect x="14" y="4" width="6" height="20"/>
               </svg>
             </div>
-          <GameContainer />
+          <Overlay />
         </div>
 
       </div>

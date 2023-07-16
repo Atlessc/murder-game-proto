@@ -3,7 +3,7 @@ import './Overlay.css'
 import Game from "./Game";
 
 
-export default function GameContainer() {
+export default function Overlay() {
 
     const [showDialog, setShowDialog] = useState(false)
     const [showActionMenu, setShowActionMenu] = useState(false)
@@ -13,7 +13,7 @@ export default function GameContainer() {
     }
 
     return (
-        <div className="GameConatiner">
+        <div className="Overlay">
             <div className="POV"><Game /></div>
 
             {showActionMenu ?
