@@ -91,6 +91,7 @@ const Game = () => {
         <>
         { GameStart ? null :
         <div className="StartGameBtn" onClick={InitializeGame}>Start Game</div>}
+        <div className="StartGameBtn" onClick={test}>Test</div>
         </>
     )
 };
