@@ -106,7 +106,7 @@
 
     .ActionBtn {
         position: absolute;
-        bottom: 0;
+        bottom: -2rem;
         right: -1rem;
         height: 50px;
         width: 60px;
