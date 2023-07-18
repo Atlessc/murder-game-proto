@@ -1,0 +1,220 @@
+.CSTBtnContainer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid #000000;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    font-size: 1rem;
+
+}
+
+.ColorSetTesterBtn {
+    cursor: pointer;
+    border: 2px solid #000000;
+    border-radius: 0.5rem;
+    margin: 10px;
+    padding: 10px;
+}
+
+.ColorBox {
+    width: 75px;
+    height: 75px;
+    border: 2px solid #000000;
+    margin: 10px;
+}
+
+.ColorSets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 150px;
+    margin: 1rem;
+}
+
+.ColorSet1 .c1 {
+    background-color: #800080;
+}
+
+.ColorSet1 .c2 {
+    background-color: #FFA500;
+}
+
+.ColorSet1 .c3 {
+    background-color: #0000FF;
+}
+
+.ColorSet1 .c4 {
+    background-color: #964B00;
+}
+
+.ColorSet1 .c5 {
+    background-color: #808080;
+}
+
+.ColorSet2 .c1 {
+    background-color: #820000;
+}
+
+.ColorSet2 .c2 {
+    background-color: #000080;
+}
+
+.ColorSet2 .c3 {
+    background-color: #FFD700;
+}
+
+.ColorSet2 .c4 {
+    background-color: #C0C0C0;
+}
+
+.ColorSet2 .c5 {
+    background-color: #F5F5DC;
+}
+
+.ColorSet3 .c1 {
+    background-color: #FF00FF;
+}
+
+.ColorSet3 .c2 {
+    background-color: #40E0D0;
+}
+
+.ColorSet3 .c3 {
+    background-color:#32CD32;
+}
+
+.ColorSet3 .c4 {
+    background-color: #FFFDD0;
+}
+
+.ColorSet3 .c5 {
+    background-color: #36454F;
+}
+
+.ColorSet4 .c1 {
+    background-color: #800020;
+}
+
+.ColorSet4 .c2 {
+    background-color: #008080;
+}
+
+.ColorSet4 .c3 {
+    background-color: #FFDB58;
+}
+
+.ColorSet4 .c4 {
+    background-color: #FFFFF0;
+}
+
+.ColorSet4 .c5 {
+    background-color: #C0C2C9;
+}
+
+.ColorSet5 .c1 {
+    background-color: #673147;
+}
+
+.ColorSet5 .c2 {
+    background-color: #FF7F50;
+}
+
+.ColorSet5 .c3 {
+    background-color: #00FFFF;
+}
+
+.ColorSet5 .c4 {
+    background-color: #D2B48C;
+}
+
+.ColorSet5 .c5 {
+    background-color: #B2BEB5;
+}
+
+.ColorSet6 .c1 {
+    background-color: #DC143C;
+}
+
+.ColorSet6 .c2 {
+    background-color: #4B0082;
+}
+
+.ColorSet6 .c3 {
+    background-color: #FFF700;
+}
+
+.ColorSet6 .c4 {
+    background-color: #3EB489;
+}
+
+.ColorSet6 .c5 {
+    background-color: #E2DFD2;
+}
+
+.ColorSet7 .c1 {
+    background-color: #FF00FF;
+}
+
+.ColorSet7 .c2 {
+    background-color: #808000;
+}
+
+.ColorSet7 .c3 {
+    background-color: #007FFF;
+}
+
+.ColorSet7 .c4 {
+    background-color: #F0E68C;
+}
+
+.ColorSet7 .c5 {
+    background-color: #555d50;
+}
+
+.ColorSet8 .c1 {
+    background-color: #722F37;
+}
+
+.ColorSet8 .c2 {
+    background-color: #00FFFF;
+}
+
+.ColorSet8 .c3 {
+    background-color: #EAD1A8;
+}
+
+.ColorSet8 .c4 {
+    background-color: #BCB88A;
+}
+
+.ColorSet8 .c5 {
+    background-color: #FFFAFE;
+}
+
+.ColorSet9 .c1 {
+    background-color: #7F00FF;
+}
+
+.ColorSet9 .c2 {
+    background-color: #FFE5B4;
+}
+
+.ColorSet9 .c3 {
+    background-color: #87CEEB;
+}
+
+.ColorSet9 .c4 {
+    background-color: #C2B280;
+}
+
+.ColorSet9 .c5 {
+    background-color: #36454F;
+}

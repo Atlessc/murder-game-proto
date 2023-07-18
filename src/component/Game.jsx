@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import data from './GameItems.json';
 import './Game.css';
+import ColorSetTesterComp from './ColorSetTesterComp';
 
 const characters = data.Characters;
 const rooms = data.Rooms;
@@ -86,11 +87,16 @@ const Game = () => {
       };
 
     return(
-        <>
-        { GameStart ? null :
-        <div className="StartGameBtn" onClick={InitializeGame}>Start Game</div>}
-        <div className="StartGameBtn" onClick={test}>Test</div>
-        </>
+        <div className='VisualContainer'>
+            <div className='RealVisContainer'>
+                { GameStart ? null :
+                <div className="StartGameBtn" onClick={InitializeGame}>Start Game</div>}
+                <div className="StartGameBtn" onClick={test}>Test</div>
+            </div>
+            <div className='ColorComp'>
+                <ColorSetTesterComp />
+            </div>
+        </div>
     )
 };
 

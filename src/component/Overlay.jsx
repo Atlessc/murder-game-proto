@@ -27,8 +27,11 @@ export default function Overlay() {
             </div>
             :
             <div className="ActionBtn" onClick={ToggleActionMenu}>☰</div>}
-            {showDialog ? null:
-            <div className="TextBox">Suspect Dialog</div>}
+
+            {showDialog ?
+            <div className="TextBox">Suspect Dialog</div>
+            :
+            null}
         </div>
     )
 }
