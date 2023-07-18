@@ -1,14 +1,31 @@
-.StartGameBtn {
-    background-color: #4CAF50;
+.Btn {
     border: none;
     color: white;
-    padding: 15px 32px;
-    margin: 10px;
+    padding: 10px 10px;
+    margin: 0 10px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     cursor: pointer;
+}
+
+.Test {
+    background-color: red;
+
+}
+
+.StartGame {
+    background-color: green;
+}
+
+.RealVisContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100px;
 }
 
 .VisualContainer {
@@ -29,4 +46,19 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 1rem;
+}
+
+@media screen and (max-width: 600px) and (min-width: 0px) {
+    .ColorComp {
+        margin: 0;
+    }
+
+    .VisualContainer {
+        height: 70%;
+        margin-top: 2rem;
+    }
+    .RealVisContainer {
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+    }
 }

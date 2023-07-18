@@ -87,6 +87,7 @@
   font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
+  margin-top: 3rem;
 }
 
 .logo {
@@ -123,4 +124,46 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 0px) {
+  .AppContainer {
+    height: 100vh;
+  }
+
+  .popupParent {
+    position: absolute;
+    top: 0;
+    left: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    width: 112%;
+    height: 110%;
+    z-index: 999;
+  }
+
+  .App {
+    text-align: center;
+    width: 99vw;
+    height: 99vh;
+  }
+
+  .popup {
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+  .startBtn {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .MenuBtn {
+    top: 1.6rem;
+    right: -1rem;
+  }
 }

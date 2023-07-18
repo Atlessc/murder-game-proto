@@ -101,3 +101,23 @@
 .Close {
     background-color: rgb(197, 71, 255);
 }
+
+@media screen and (max-width: 600px) and (min-width: 0px) {
+
+    .ActionBtn {
+        position: absolute;
+        bottom: -1.8rem;
+        right: -1rem;
+        height: 50px;
+        width: 60px;
+    }
+        
+    .POV {
+        justify-content: flex-start;
+    }
+
+    .Overlay {
+        height: 100vh;
+        padding: 0;
+    }
+}

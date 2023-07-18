@@ -90,8 +90,8 @@ const Game = () => {
         <div className='VisualContainer'>
             <div className='RealVisContainer'>
                 { GameStart ? null :
-                <div className="StartGameBtn" onClick={InitializeGame}>Start Game</div>}
-                <div className="StartGameBtn" onClick={test}>Test</div>
+                <div className="StartGame Btn" onClick={InitializeGame}>Start Game</div>}
+                <div className="Test Btn" onClick={test}>Test</div>
             </div>
             <div className='ColorComp'>
                 <ColorSetTesterComp />
