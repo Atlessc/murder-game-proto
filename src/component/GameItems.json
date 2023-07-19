@@ -31,24 +31,29 @@
         },
         {
             "id": 6,
-            "name": "Char6"
+            "name": "Professor Anna Thorne",
+            "nickname": "Professor Thorne"
         },
         {
             "id": 7,
-            "name": "Char7"
+            "name": "Madame Lucy Danvers",
+            "nickname": "Madame Danvers"
 
         },
         {
             "id": 8,
-            "name": "Char8"
+            "name": "Colonel Henry Kensington",
+            "nickname": "Colonel Kensington"
         },
         {
             "id": 9,
-            "name": "Char9"
+            "name": "Mr. Richard Albright",
+            "nickname": "Mr. Albright"
         },
         {
             "id": 10,
-            "name": "Char10"
+            "name": "Lord Samuel Carter",
+            "nickname": "Lord Carter"
         }
     ],
     "Victim": {
@@ -89,63 +94,63 @@
     "Weapons": [
         {
             "id": 1,
-            "name": "Weapon1"
+            "name": "Trophy"
         },
         {
             "id": 2,
-            "name": "Weapon2"
+            "name": "Piano Wire"
         },
         {
             "id": 3,
-            "name": "Weapon3"
+            "name": "Poison Dart"
         },
         {
             "id": 4,
-            "name": "Weapon4"
+            "name": "Golf Club"
         },
         {
             "id": 5,
-            "name": "Weapon5"
+            "name": "China Vase"
         },
         {
             "id": 6,
-            "name": "Weapon6"
+            "name": "Arsenic-Laced Wine"
         },
         {
             "id": 7,
-            "name": "Weapon7"
+            "name": "Stiletto"
         },
         {
             "id": 8,
-            "name": "Weapon8"
+            "name": "Paint Bucket"
         },
         {
             "id": 9,
-            "name": "Weapon9"
+            "name": "Knife"
         },
         {
             "id": 10,
-            "name": "Weapon10"
+            "name": "Candelabra"
         },
         {
             "id": 11,
-            "name": "Weapon11"
+            "name": "Hammer"
         },
         {
             "id": 12,
-            "name": "Weapon12"
+            "name": "Rope"
         },
         {
             "id": 13,
-            "name": "Weapon13"
+            "name": "Pistol"
         },
         {
             "id": 14,
-            "name": "Weapon14"
+            "name": "Fireplace Poker"
         },
         {
             "id": 15,
-            "name": "Weapon15"
+            "name": "Bat"
         }
     ]
 }
