@@ -1,66 +1,90 @@
 {
     "Player": {
         "id": 1,
-        "name": "Detective"
+        "name": "Captain Rory Donovan",
+        "nickname": "Captain Donovan",
+        "role": "Detective"
+    },
+    "Victim": {
+        "id": 1,
+        "name": "Dr. Charles Warwick",
+        "nickname": "Dr. Warwick",
+        "role": "Victim",
+        "dialogFile": "src/component/Characters/VICTIM-Charles-Warwick.json"
     },
     "Characters": [
         {
             "id": 1,
             "name": "Ms. Audrey Montague",
-            "nickname": "Ms. Montague"
+            "nickname": "Ms. Montague",
+            "role": "Suspect",
+            "dialogFile": "src/component/Characters/1-Alfred-Parker.json"
         },
         {
             "id": 2,
             "name": "Lady Alice Underwood",
-            "nickname": "Lady Underwood"
+            "nickname": "Lady Underwood",
+            "role": "Suspect",
+            "dialogFile": "src/component/Characters/2-Alice-Underwood.json"
         },
         {
             "id": 3,
             "name": "Duke Alfred Parker",
-            "nickname": "Duke Parker"
+            "nickname": "Duke Parker",
+            "role": "Suspect",
+            "dialogFile": "src/component/Characters/3-Alfred-Parker.json"
         },
         {
             "id": 4,
             "name": "Miss Daisy Pennington",
-            "nickname": "Miss Pennington"
+            "nickname": "Miss Pennington",
+            "role": "Suspect",
+            "dialogFile": "src/component/Characters/4-Daisy-Pennington.json"
         },
         {
             "id": 5,
             "name": "Sir Frederick Caldwell",
-            "nickname": "Sir Caldwell"
+            "nickname": "Sir Caldwell",
+            "role": "Suspect",
+            "dialogFile": "src/component/Characters/5-Frederick-Caldwell.json"
         },
         {
             "id": 6,
             "name": "Professor Anna Thorne",
-            "nickname": "Professor Thorne"
+            "nickname": "Professor Thorne",
+            "role": "Suspect",
+            "dialogFile": "src/component/Characters/6-Anna-Thorne.json"
         },
         {
             "id": 7,
             "name": "Madame Lucy Danvers",
-            "nickname": "Madame Danvers"
+            "nickname": "Madame Danvers",
+            "role": "Suspect",
+            "dialogFile": "src/component/Characters/7-Lucy-Danvers.json"
 
         },
         {
             "id": 8,
             "name": "Colonel Henry Kensington",
-            "nickname": "Colonel Kensington"
+            "nickname": "Colonel Kensington",
+            "role": "Suspect",
+            "dialogFile": "src/component/Characters/8-Henry-Kensington.json"
         },
         {
             "id": 9,
             "name": "Mr. Richard Albright",
-            "nickname": "Mr. Albright"
+            "nickname": "Mr. Albright",
+            "role": "Suspect",
+            "dialogFile": "src/component/Characters/9-Richard-Albright.json"
         },
         {
             "id": 10,
             "name": "Lord Samuel Carter",
-            "nickname": "Lord Carter"
+            "nickname": "Lord Carter",
+            "role": "Suspect",
+            "dialogFile": "src/component/Characters/10-Samuel-Carter.json"
         }
     ],
-    "Victim": {
-        "id": 1,
-        "name": "Dr. Charles Warwick",
-        "nickname": "Dr. Warwick"
-    },
     "Rooms": [
         {
             "id": 1,

@@ -4,27 +4,207 @@
             "dialog":[
                 {
                     "id": 1,
-                    "Text": "1.lorem ipsum dolor sit amet.1"
+                    "Text": [
+                        {
+                            "id": 1,
+                            "Text": "I was in the library when it happened."
+                        },
+                        {
+                            "id": 2,
+                            "Text": "I was reading a book, trying to pass the time."
+                        },
+                        {
+                            "id": 3,
+                            "Text": "I didn't hear or see anything unusual."
+                        }
+                    ]
                 },
                 {
                     "id": 2,
-                    "Text": "2.lorem ipsum dolor sit amet.2"
+                    "Text": [
+                        {
+                            "id": 1,
+                            "Text": "I don't know why you keep asking me the same questions."
+                        },
+                        {
+                            "id": 2,
+                            "Text": "I've already told you everything I know."
+                        },
+                        {
+                            "id": 3,
+                            "Text": "I'm telling you the truth."
+                        }
+                    ]
                 },
                 {
                     "id": 3,
-                    "Text": "3.lorem ipsum dolor sit amet.3"
+                    "Text": [
+                        {
+                            "id": 1,
+                            "Text": "I loved my husband, why would I want to hurt him?"
+                        },
+                        {
+                            "id": 2,
+                            "Text": "We had our problems, like any couple, but we were working on them."
+                        },
+                        {
+                            "id": 3,
+                            "Text": "We were trying to make things better."
+                        }
+                    ]
                 },
                 {
                     "id": 4,
-                    "Text": "4.lorem ipsum dolor sit amet.4"
+                    "Text": [
+                        {
+                            "id": 1,
+                            "Text": "I don't know who could have done this to him."
+                        },
+                        {
+                            "id": 2,
+                            "Text": "There are nine other people in this house, any one of them could have had a motive."
+                        },
+                        {
+                            "id": 3,
+                            "Text":"Maybe one of them had a grudge against him."
+                        }
+                    ]
                 },
                 {
                     "id": 5,
-                    "Text": "5.lorem ipsum dolor sit amet.5"
+                    "Text": [
+                        {
+                            "id": 1,
+                            "Text": "I'm sorry, I'm just so nervous and upset."
+                        },
+                        {
+                            "id": 2,
+                            "Text": "This whole situation is a nightmare."
+                        },
+                        {
+                            "id": 3,
+                            "Text": "I can't believe he's gone and we're all stuck here."
+                        }
+                    ]
                 },
                 {
                     "id": 6,
-                    "Text": "6.lorem ipsum dolor sit amet.6"
+                    "Text": [
+                        {
+                            "id": 1,
+                            "Text": "I was in the kitchen, making some tea."
+                        },
+                        {
+                            "id": 1,
+                            "Text": "Wait, no, I mean the library."
+                        },
+                        {
+                            "id": 1,
+                            "Text": "Yes, the library, that's where I was."
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "Text": [
+                        {
+                            "id": 1,
+                            "Text": "I don't know why anyone would want to hurt him."
+                        },
+                        {
+                            "id": 2,
+                            "Text": "He was a good man, a loving husband."
+                        },
+                        {
+                            "id": 3,
+                            "Text": "He didn't deserve this."
+                        }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "Text": [
+                        {
+                            "id": 1,
+                            "Text": "I can't imagine who could have done this."
+                        },
+                        {
+                            "id": 2,
+                            "Text": "Everyone here seems so shocked and upset."
+                        },
+                        {
+                            "id": 3,
+                            "Text": "But someone must be lying."
+                        }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "Text": [
+                        {
+                            "id": 1,
+                            "Text": "I'm sorry, I'm just so confused and scared."
+                        },
+                        {
+                            "id": 2,
+                            "Text": "I don't know what to think or do."
+                        },
+                        {
+                            "id": 3,
+                            "Text": "I just want to go home."
+                        }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "Text": [
+                        {
+                            "id": 1,
+                            "Text": "I didn't see or hear anything, I swear."
+                        },
+                        {
+                            "id": 2,
+                            "Text": "I was just minding my own business, trying to stay calm."
+                        },
+                        {
+                            "id": 3,
+                            "Text": "I had nothing to do with this."
+                        }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "Text": [
+                            {
+                                "id": 1,
+                                "Text": "I don't know what else to tell you."
+                            },
+                            {
+                                "id": 2,
+                                "Text": "I've already told you everything I know."
+                            },
+                            {
+                                "id": 3,
+                                "Text": "Please, you have to believe me."
+                            }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "Text": [
+                        {
+                            "id": 1,
+                            "Text": "I can't take this anymore, being stuck here with all these people and the body."
+                        },
+                        {
+                            "id": 2,
+                            "Text": "It's too much."
+                        },
+                        {
+                            "id": 3,
+                            "Text": "I need to get out of here."
+                        }
+                    ]
                 }
             ]
         },
@@ -34,7 +214,8 @@
     ],
     "IsNotMurderer": [
         {
-            "Murderer": "Char1",
+            "id": 2,
+            "Murderer": "Alice Underwood",
             "dialog": [
                 {
                     "id": 1,
@@ -63,7 +244,8 @@
             ]
         },
         {
-            "Murderer": "Char2",
+            "id": 3,
+            "Murderer": "Alfred Parker",
             "dialog": [
                 {
                     "id": 1,
@@ -92,7 +274,8 @@
             ]
         },
         {
-            "Murderer": "Char3",
+            "id": 4,
+            "Murderer": "Daisy Pennington",
             "dialog": [
                 {
                     "id": 1,
@@ -121,7 +304,8 @@
             ]
         },
         {
-            "Murderer": "Char4",
+            "id": 5,
+            "Murderer": "Frederick Caldwell",
             "dialog": [
                 {
                     "id": 1,
@@ -150,7 +334,8 @@
             ]
         },
         {
-            "Murderer": "Char5",
+            "id": 6,
+            "Murderer": "Anna Thorne",
             "dialog": [
                 {
                     "id": 1,
@@ -179,7 +364,8 @@
             ]
         },
         {
-            "Murderer": "Char6",
+            "id": 7,
+            "Murderer": "Lucy Danvers",
             "dialog": [
                 {
                     "id": 1,
@@ -208,7 +394,8 @@
             ]
         },
         {
-            "Murderer": "Char7",
+            "id": 8
+            "Murderer": "Henry Kensington",
             "dialog": [
                 {
                     "id": 1,
@@ -237,7 +424,8 @@
             ]
         },
         {
-            "Murderer": "Char8",
+            "id": 9,
+            "Murderer": "Richard Albright",
             "dialog": [
                 {
                     "id": 1,
@@ -266,7 +454,8 @@
             ]
         },
         {
-            "Murderer": "Char9",
+            "id": 10,
+            "Murderer": "Samuel Carter",
             "dialog": [
                 {
                     "id": 1,

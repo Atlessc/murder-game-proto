@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
-import data from './GameItems.json';
+import data from './data/GameItems.json';
 import './Game.css';
-import ColorSetTesterComp from './ColorSetTesterComp';
 
 const characters = data.Characters;
 const rooms = data.Rooms;
 const weapons = data.Weapons;
-
-
 
 const CharacterRoomTracker = {
     "Foyer": [],
@@ -93,9 +90,9 @@ const Game = () => {
                 <div className="StartGame Btn" onClick={InitializeGame}>Start Game</div>}
                 <div className="Test Btn" onClick={test}>Test</div>
             </div>
-            <div className='ColorComp'>
+            {/* <div className='ColorComp'>
                 <ColorSetTesterComp />
-            </div>
+            </div> */}
         </div>
     )
 };

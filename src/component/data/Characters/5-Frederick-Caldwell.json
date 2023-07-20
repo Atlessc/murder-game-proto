@@ -34,7 +34,8 @@
     ],
     "IsNotMurderer": [
         {
-            "Murderer": "Char1",
+            "id": 1,
+            "Murderer": "Audrey Montague",
             "dialog": [
                 {
                     "id": 1,
@@ -63,7 +64,8 @@
             ]
         },
         {
-            "Murderer": "Char2",
+            "id": 2,
+            "Murderer": "Alice Underwood",
             "dialog": [
                 {
                     "id": 1,
@@ -92,7 +94,8 @@
             ]
         },
         {
-            "Murderer": "Char3",
+            "id": 3,
+            "Murderer": "Alfred Parker",
             "dialog": [
                 {
                     "id": 1,
@@ -121,7 +124,8 @@
             ]
         },
         {
-            "Murderer": "Char4",
+            "id": 4,
+            "Murderer": "Daisy Pennington",
             "dialog": [
                 {
                     "id": 1,
@@ -150,7 +154,8 @@
             ]
         },
         {
-            "Murderer": "Char5",
+            "id": 6,
+            "Murderer": "Anna Thorne",
             "dialog": [
                 {
                     "id": 1,
@@ -179,7 +184,8 @@
             ]
         },
         {
-            "Murderer": "Char6",
+            "id": 7,
+            "Murderer": "Lucy Danvers",
             "dialog": [
                 {
                     "id": 1,
@@ -208,7 +214,8 @@
             ]
         },
         {
-            "Murderer": "Char7",
+            "id": 8,
+            "Murderer": "Henry Kensington",
             "dialog": [
                 {
                     "id": 1,
@@ -237,7 +244,8 @@
             ]
         },
         {
-            "Murderer": "Char8",
+            "id": 9,
+            "Murderer": "Richard Albright",
             "dialog": [
                 {
                     "id": 1,
@@ -266,7 +274,8 @@
             ]
         },
         {
-            "Murderer": "Char9",
+            "id": 10,
+            "Murderer": "Samuel Carter",
             "dialog": [
                 {
                     "id": 1,

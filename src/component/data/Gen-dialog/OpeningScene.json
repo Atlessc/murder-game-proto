@@ -1,0 +1,16 @@
+{
+    "openingScene": [
+        {
+            "id": 1,
+            "dialog": "Welcome to the game!"
+        },
+        {
+            "id": 2,
+            "dialog": "In this game, you will embark on an epic adventure."
+        },
+        {
+            "id": 3,
+            "dialog": "Are you ready to begin?"
+        }
+    ]
+}

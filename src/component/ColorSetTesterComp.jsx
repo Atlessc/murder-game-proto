@@ -48,18 +48,17 @@ function ColorSetTesterComp() {
     return (
         <>
             <div className='CSTBtnContainer'>
-                <div className='ColorSetTesterBtn' onClick={ToggleColorSet1}>Set1</div>
-                <div className='ColorSetTesterBtn' onClick={ToggleColorSet2}>Set2</div>
-                <div className='ColorSetTesterBtn' onClick={ToggleColorSet3}>Set3</div>
-                <div className='ColorSetTesterBtn' onClick={ToggleColorSet4}>Set4</div>
-                <div className='ColorSetTesterBtn' onClick={ToggleColorSet5}>Set5</div>
-                <div className='ColorSetTesterBtn' onClick={ToggleColorSet6}>Set6</div>
-                <div className='ColorSetTesterBtn' onClick={ToggleColorSet7}>Set7</div>
-                <div className='ColorSetTesterBtn' onClick={ToggleColorSet8}>Set8</div>
-                <div className='ColorSetTesterBtn' onClick={ToggleColorSet9}>Set9</div>
+                <div className='ColorSetTesterBtn' id="set1" onClick={ToggleColorSet1}>Set1</div>
+                <div className='ColorSetTesterBtn' id="set2" onClick={ToggleColorSet2}>Set2</div>
+                <div className='ColorSetTesterBtn' id="set3" onClick={ToggleColorSet3}>Set3</div>
+                <div className='ColorSetTesterBtn' id="set4" onClick={ToggleColorSet4}>Set4</div>
+                <div className='ColorSetTesterBtn' id="set5" onClick={ToggleColorSet5}>Set5</div>
+                <div className='ColorSetTesterBtn' id="set6" onClick={ToggleColorSet6}>Set6</div>
+                <div className='ColorSetTesterBtn' id="set7" onClick={ToggleColorSet7}>Set7</div>
+                <div className='ColorSetTesterBtn' id="set8" onClick={ToggleColorSet8}>Set8</div>
+                <div className='ColorSetTesterBtn' id="set9" onClick={ToggleColorSet9}>Set9</div>
 
             </div>
-            {/* <div>{colorState}</div> */}
             <div className={`ColorSets ${colorState}`}>
                 <div className={`ColorBox c1`}></div>
                 <div className={`ColorBox c2`}></div>
