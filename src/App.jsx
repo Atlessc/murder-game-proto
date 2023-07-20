@@ -32,7 +32,6 @@ function App() {
             </div>
           <Overlay />
         </div>
-
       </div>
   )
 };

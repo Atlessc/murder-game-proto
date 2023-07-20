@@ -35,13 +35,11 @@ const Game = () => {
         // Create a copy of the characters array
         const charactersCopy = [...characters];
 
-
         // Find the index of msChar in the characters array
         const msCharIndex = charactersCopy.findIndex(character => character.name === msChar);
 
         // Remove msChar from the characters array
         charactersCopy.splice(msCharIndex, 1);
-
 
         // Shuffle the characters array
         for (let i = charactersCopy.length - 1; i > 0; i--) {
@@ -74,6 +72,11 @@ const Game = () => {
         setMsWeapon(newMsWeapon);
         PlaceCharactersInRooms(newMsChar, newMsRoom);
       }
+
+      const handleNotepadClick = () => {
+        // Show the Notepad component
+        setShowNotepad(true);
+      };
 
       function test() {
         console.log(CharacterRoomTracker);

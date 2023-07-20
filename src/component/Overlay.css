@@ -94,12 +94,15 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     cursor: pointer;
-    background-color: rgb(255, 84, 84);
     color: white;
 }
 
+.Open {
+    background-color: rgb(23, 50, 23);
+}
+
 .Close {
-    background-color: rgb(197, 71, 255);
+    background-color: rgb(255, 70, 70);
 }
 
 @media screen and (max-width: 600px) and (min-width: 0px) {
@@ -111,7 +114,6 @@
         height: 50px;
         width: 60px;
     }
-        
     .POV {
         justify-content: flex-start;
     }
