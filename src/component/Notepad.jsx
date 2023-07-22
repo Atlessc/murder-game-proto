@@ -46,12 +46,10 @@ export default function Notepad({ show }) {
     return null;
   } else {
 
-
   return (
       <div className='NotepadContainer'>
         <h3 className='Title'>Notepad</h3>
         <div className='NotepadTabs'>
-            {/* create 4 div elements with the className "NotepadTab" with the names "Notes", "Suspects", "Rooms", and "Weapons" and then an onClick attribute that updates the tab state to the value of the their respective element content value */}
             <div className='NotepadTab' onClick={() => setTab("Notes")}>Notes</div>
             <div className='NotepadTab' onClick={() => setTab("Suspects")}>Suspects</div>
             <div className='NotepadTab' onClick={() => setTab("Rooms")}>Rooms</div>

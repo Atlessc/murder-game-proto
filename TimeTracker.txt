@@ -1,5 +1,5 @@
 Tyler S = {
-    Active Time Coding = 41 min
+    Active code time = 4.1 hrs
 }
 
 Sourena K = {
