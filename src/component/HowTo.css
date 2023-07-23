@@ -1,0 +1,26 @@
+.HowTo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+    padding: 1rem;
+    z-index: 999;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+}

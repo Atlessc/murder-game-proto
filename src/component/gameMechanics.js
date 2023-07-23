@@ -17,7 +17,7 @@ const characterRoomTracker = {
     };
 
     export function InitializeGame() {
-      const { setMsChar, setMsRoom, setMsWeapon, setPlayerRoom } = useStore.getState();
+      const { setMsChar, setMsRoom, setMsWeapon, setPlayerRoom, setGameStatus } = useStore.getState();
       const newMsChar = characters[Math.floor(Math.random() * characters.length)].name;
       const newMsRoom = rooms[Math.floor(Math.random() * rooms.length)].name;
       const newMsWeapon = weapons[Math.floor(Math.random() * weapons.length)].name;
@@ -26,6 +26,7 @@ const characterRoomTracker = {
       setMsRoom(newMsRoom);
       setMsWeapon(newMsWeapon);
       const charactersCopy = [...characters];
+      const GameStatus = useStore.getState().gameStatus;
     
       // Find the index of msChar in the characters array
       const msCharIndex = charactersCopy.findIndex(character => character.name === newMsChar);
@@ -50,6 +51,8 @@ const characterRoomTracker = {
       
       // Place the remaining character and msChar in msRoom
       characterRoomTracker[newMsRoom].push(charactersCopy[8].name, newMsChar);
+      useStore.setState({gameStatus: 'Active'})
+      console.log(GameStatus);
     }
 
 export function playerChangeRoom(playerCurrentRoom, setPlayerRoom) {
@@ -75,7 +78,7 @@ export function playerChangeRoom(playerCurrentRoom, setPlayerRoom) {
     console.log(`Player moved to ${newRoom}`);
   }
 
-  export function moveCharacters(characterRoomTracker, isCharacterBeingInterviewed) {
+export function moveCharacters(characterRoomTracker, isCharacterBeingInterviewed) {
     // Loop through the characterRoomTracker object
     for (const [roomName, charactersInRoom] of Object.entries(characterRoomTracker)) {
       // Loop through the characters in the current room
@@ -123,3 +126,7 @@ export function playerChangeRoom(playerCurrentRoom, setPlayerRoom) {
     }
   }
 
+export function PauseGame() {
+    const { setGameStatus } = useStore.getState();
+    setGameStatus('Paused');
+  }

@@ -10,6 +10,7 @@ import useStore from './store';
 import { InitializeGame, moveCharacters } from './gameMechanics';
 import { characters } from './CharacterObjects';
 import DevConsole from './DevConsole';
+import Timer from './Timer';
 
 const Game = () => {
   const gameStart = useStore(state => state.gameStart);
@@ -26,6 +27,10 @@ const Game = () => {
   const msWeapon = useStore(state => state.msWeapon);
   const msVictim = useStore(state => state.msVictim);
   const playerRoom = useStore(state => state.playerRoom);
+  const gameStatus = useStore(state => state.gameStatus);
+  const noteSuspects = useStore(state => state.noteSuspects);
+
+
 
 
   useEffect(() => {
@@ -52,20 +57,30 @@ const Game = () => {
     console.log(`The Murderer is ${msChar}`);
     console.log(`The Murder happened in the ${msRoom}`);
     console.log(`${msChar} used the ${msWeapon} to kill ${msVictim}`);
+    console.log({gameStatus})
+    console.log({noteSuspects})
 
   };
 
   return (
     <div className='POV'>
-
-      {/* <DevConsole /> */}
-        {!gameStart && (
+      <Timer />
+      <DevConsole />
+        {gameStatus ?
           <div className="StartGame Btn" onClick={InitializeGame}>
             Start Game
           </div>
-        )}
+          :
+          null
+        }
         <div className='Test Btn' onClick={Test}>Test</div>
-        <Notepad show={showNotepad} />
+        {showNotepad ?
+          <div>
+            <Notepad/>
+          </div>
+          :
+          null
+        }
         <ActionMenu />
         <DialogBox />
     </div>

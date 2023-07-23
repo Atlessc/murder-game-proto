@@ -13,8 +13,7 @@ const ActionMenu = () => {
   const notepadBtn = useStore(state => state.notepadBtn);
 
   const ToggleNotepad = () => {
-    toggleNotepad('Open');
-    toggleActionMenu('Close');
+    toggleNotepad(!showNotepad);
   };
 
   if (actionMenu === false) {
@@ -30,7 +29,7 @@ const ActionMenu = () => {
   return (
     <>
         <div className="ActionMenu">
-          <div className={`ActionItems ${showNotepad ? 'Close' : 'Open'}`} onClick={ToggleNotepad}>
+          <div className={`ActionItems Open`} onClick={ToggleNotepad}>
             {showNotepad ? <div>Close Note</div> : <div>Notepad</div>}
           </div>
           <div className={`ActionItems ${showRooms ? 'Close' : 'Open'}`} onClick={toggleRooms}>

@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 1.5rem;
   text-align: center;
+  overflow: hidden;
 }
 
 .AppContainer {
@@ -59,8 +60,7 @@
 }
 
 .popup {
-
-  height: 80%;
+  height: 90%;
   width: 80%;
   backdrop-filter: blur(2px);
   display: flex;
@@ -78,7 +78,15 @@
   -o-border-radius: 1.5rem;
 }
 
-.startBtn {
+.btnCon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: auto;
+}
+
+.CloseButton {
   background-color: #ff4747;
   color: #ffffff;
   border: 2px solid #000000;
@@ -88,7 +96,20 @@
   font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
-  margin-top: 3rem;
+  margin: 2rem 1.5rem 0 0;
+}
+
+.HowToBtn {
+  background-color: #ff4747;
+  color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  margin: 2rem 1.5rem 0 0;
 }
 
 .logo {

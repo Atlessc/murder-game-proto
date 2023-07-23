@@ -14,12 +14,16 @@ const useStore = create(set => ({
   showNotepad: false,
   notepadBtn: 'Open',
   roomsList: false,
-  gameStarted: false,
+  gameStatus: 'Pre-Game',
   msVictim: `${victim}`,
   msChar: '',
   msRoom: '',
   msWeapon: '',
   playerRoom: '',
+  noteNotes: '',
+  noteSuspects: [],
+  noteRooms: [],
+  noteWeapons: [],
   characterRoomTracker: {
     'Foyer': [],
     'Dining Room': [],
@@ -32,13 +36,17 @@ const useStore = create(set => ({
   togglePopUp: () => set(state => ({ popUp: !state.popUp })),
   toggleDialog: () => set(state => ({ dialog: !state.dialog })),
   toggleActionMenu: () => set(state => ({ actionMenu: !state.actionMenu })),
-  toggleNotepad: () => set(value => ({ notepad: value })),
+  toggleNotepad: () => set(state => ({ showNotepad: !state.showNotepad })),
   toggleRoomsList: () => set(state => ({ roomsList: !state.roomsList })),
-  setGameStart: value => set({ gameStarted: value }),
+  setGameStatus: value => set({ gameStatus: value }),
   setMsChar: value => set({ msChar: value }),
   setMsRoom: value => set({ msRoom: value }),
   setMsWeapon: value => set({ msWeapon: value }),
   setPlayerRoom: value => set(({ playerRoom: value })),
+  setNoteRooms: value => set({ noteRooms: value }),
+  setNoteWeapons: value => set({ noteWeapons: value }),
+  setNoteSuspects: value => set({ noteSuspects: value }),
+  setNoteNotes: value => set({ noteNotes: value })
 }));
 
 export default useStore;
