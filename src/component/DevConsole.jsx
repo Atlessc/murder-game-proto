@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './DevConsole.css';
+import './styles/DevConsole.css';
 import useStore from './store';
 
 const DevConsole = ({ actions }) => {

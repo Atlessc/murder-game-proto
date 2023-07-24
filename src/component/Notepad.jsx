@@ -1,6 +1,6 @@
 // Notepad.jsx
 import React, { useState } from 'react';
-import './Notepad.css';
+import './styles/Notepad.css';
 import useStore from './store';
 
 export default function Notepad() {

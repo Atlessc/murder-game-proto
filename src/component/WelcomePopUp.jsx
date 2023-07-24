@@ -1,5 +1,5 @@
 import React from "react";
-import './WelcomePopUp.css';
+import './styles/WelcomePopUp.css';
 
 export default function WelcomePopup() {
     return (

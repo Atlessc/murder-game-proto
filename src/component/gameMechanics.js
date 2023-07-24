@@ -6,16 +6,6 @@ const characters = data.Characters;
 const rooms = data.Rooms;
 const weapons = data.Weapons;
 
-const characterRoomTracker = {
-    'Foyer': [],
-    'Dining Room': [],
-    'Kitchen': [],
-    'Art Studio': [],
-    'Library': [],
-    'Living Room': [],
-    'Master Bedroom': []
-    };
-
     export function InitializeGame() {
       const { setMsChar, setMsRoom, setMsWeapon, setPlayerRoom, setGameStatus } = useStore.getState();
       const newMsChar = characters[Math.floor(Math.random() * characters.length)].name;
@@ -27,13 +17,14 @@ const characterRoomTracker = {
       setMsWeapon(newMsWeapon);
       const charactersCopy = [...characters];
       const GameStatus = useStore.getState().gameStatus;
-    
+      const characterRoomTracker = useStore.getState().characterRoomTracker;
+
       // Find the index of msChar in the characters array
       const msCharIndex = charactersCopy.findIndex(character => character.name === newMsChar);
-    
+
       // Remove msChar from the characters array
       charactersCopy.splice(msCharIndex, 1);
-    
+      
       // Shuffle the characters array
       for (let i = charactersCopy.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));

@@ -21,6 +21,7 @@ const useStore = create(set => ({
   msWeapon: '',
   playerRoom: '',
   noteNotes: '',
+  roomMenu: false,
   noteSuspects: [],
   noteRooms: [],
   noteWeapons: [],
@@ -46,7 +47,8 @@ const useStore = create(set => ({
   setNoteRooms: value => set({ noteRooms: value }),
   setNoteWeapons: value => set({ noteWeapons: value }),
   setNoteSuspects: value => set({ noteSuspects: value }),
-  setNoteNotes: value => set({ noteNotes: value })
+  setNoteNotes: value => set({ noteNotes: value }),
+  setRoomMenu: state => set({ roomMenu: state }),
 }));
 
 export default useStore;

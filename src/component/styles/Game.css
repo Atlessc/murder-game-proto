@@ -11,11 +11,58 @@
 
 .Test {
     background-color: red;
-
+    border: 2px solid #000000;
+    box-shadow: -5px 7px 0 #000000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 0.5rem;
 }
 
 .StartGame {
     background-color: green;
+    border: 2px solid #000000;
+    box-shadow: -5px 7px 0 #000000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 0.5rem;
+}
+
+.News {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    width: 40%;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    border: 3px solid #000000;
+    border-radius: 1rem;
+    box-shadow: -5px 7px 0 #000000;
+}
+
+.warning {
+    color: red;
+}
+
+.News p {
+    text-align: left;
+}
+
+.News ol {
+    text-align: left;
+}
+
+.News li {
+    margin-bottom: 10px;
 }
 
 .RealVisContainer {
@@ -49,7 +96,6 @@
     flex-wrap: wrap;
     margin: 1rem;
 }
-
 @media screen and (max-width: 600px) and (min-width: 0px) {
     .ColorComp {
         margin: 0;

@@ -1,7 +1,7 @@
 // Game.jsx
 import React, { useEffect } from 'react';
-import './Game.css';
-import './Overlay.css';
+import './styles/Game.css';
+import './styles/Overlay.css';
 import ActionMenu from './ActionMenu';
 import DialogBox from './DialogBox';
 import Notepad from './Notepad';
@@ -11,6 +11,7 @@ import { InitializeGame, moveCharacters } from './gameMechanics';
 import { characters } from './CharacterObjects';
 import DevConsole from './DevConsole';
 import Timer from './Timer';
+import PlayerChangeRoom from './RoomChanger';
 
 const Game = () => {
   const gameStart = useStore(state => state.gameStart);
@@ -29,6 +30,7 @@ const Game = () => {
   const playerRoom = useStore(state => state.playerRoom);
   const gameStatus = useStore(state => state.gameStatus);
   const noteSuspects = useStore(state => state.noteSuspects);
+  const roomMenu = useStore(state => state.roomMenu);
 
 
 
@@ -59,6 +61,7 @@ const Game = () => {
     console.log(`${msChar} used the ${msWeapon} to kill ${msVictim}`);
     console.log({gameStatus})
     console.log({noteSuspects})
+    console.log({roomMenu})
 
   };
 
@@ -66,12 +69,25 @@ const Game = () => {
     <div className='POV'>
       <Timer />
       <DevConsole />
-        {gameStatus ?
-          <div className="StartGame Btn" onClick={InitializeGame}>
-            Start Game
-          </div>
+      <div className='News'>
+        <h3>Thank you for visting! (last update 07/23/2023)</h3>
+        <p className='warning'>Warning: if the layout looks weird, set the window to 1200x800</p>
+        <p><b>We are still working on everything but if you want to see what we have already, here's a list of what is working:</b></p>
+        <ol>
+          <li>The Room button will change the player's current room</li>
+          <li>The notepad works and retains the notes!</li>
+          <li>The pause/play button up top right will pause the timer, set the gamestatus state value to "Paused" then "Active"</li>
+          <li>The red input up top is a dev console for testers and devs to make sure the states are charging to the correct values and at the right times</li>
+          <li className='warning'><b>So much more to come but there may be a bit of a break between updates</b></li>
+        </ol>
+      </div>
+        {
+          gameStatus ?
+            <div className="StartGame Btn" onClick={InitializeGame}>
+              Start Game
+            </div>
           :
-          null
+            null
         }
         <div className='Test Btn' onClick={Test}>Test</div>
         {showNotepad ?
@@ -81,6 +97,13 @@ const Game = () => {
           :
           null
         }
+        {roomMenu ?
+        <>
+          <PlayerChangeRoom />
+        </>
+        :
+        null
+      }
         <ActionMenu />
         <DialogBox />
     </div>

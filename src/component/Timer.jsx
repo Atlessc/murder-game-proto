@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import useStore from './store';
+import './styles/Timer.css';
 
 const Timer = () => {
   const [timeLeft, setTimeLeft] = useState(10 * 60);
@@ -21,8 +22,10 @@ const Timer = () => {
   }, [gameStatus]);
 
   return (
-    <div>
+    <div className='Timer'>
+    <div className='Time'>
       Time left: {Math.floor(timeLeft / 60)}:{timeLeft % 60 < 10 ? `0${timeLeft % 60}` : timeLeft % 60}
+    </div>
     </div>
   );
 };

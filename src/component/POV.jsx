@@ -1,11 +1,11 @@
 // POV.jsx
 import React from 'react';
-import './Overlay.css';
+import './styles/Overlay.css';
 
 const POV = () => {
 
   return (
-    <div className="POVContainer">
+    <div>
     </div>
   );
 };

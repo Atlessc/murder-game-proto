@@ -30,8 +30,8 @@
 
 .MenuBtn {
   position: absolute;
-  top: 5%;
-  right: 3%;
+  top: 7%;
+  right: 8%;
   background-color: #ff4747;
   color: #ffffff;
   border: 2px solid #000000;
@@ -41,8 +41,8 @@
   font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
-  margin: 1rem;
   z-index: 10;
+  box-shadow: -5px 7px 0 #000000;
 }
 
 .popupParent {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./HowTo.css";
+import "./styles/HowTo.css";
 
 export default function HowTo() {
     return (
