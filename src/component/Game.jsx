@@ -80,7 +80,7 @@ const Game = () => {
           <li className='warning'><b>So much more to come but there may be a bit of a break between updates</b></li>
         </ol>
         <button className='SupportBtn' href='https://ko-fi.com/web54devco' target='_blank' >
-          <div>Buy Me A Coffee</div>
+          Buy Me A Coffee
         </button>
       </div>
         {
