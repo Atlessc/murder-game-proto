@@ -80,8 +80,8 @@ const Game = () => {
           <li className='warning'><b>So much more to come but there may be a bit of a break between updates</b></li>
         </ol>
         <a className='SupportBtn' href='https://ko-fi.com/web54devco' target='_blank' >
-          <div>
-            Buy Me A Coffee
+          <div className='message'>
+            <div className='emoji'>👽</div>Support My Work<div className='emoji'>👾</div>
           </div>
         </a>
         </div>
