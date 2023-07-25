@@ -76,10 +76,12 @@ const Game = () => {
         <ol>
           <li>The Room button will change the player's current room</li>
           <li>The notepad works and retains the notes!</li>
-          <li>The pause/play button up top right will pause the timer, set the gamestatus state value to "Paused" then "Active"</li>
           <li>The red input up top is a dev console for testers and devs to make sure the states are charging to the correct values and at the right times</li>
           <li className='warning'><b>So much more to come but there may be a bit of a break between updates</b></li>
         </ol>
+        <button className='SupportBtn' href='https://ko-fi.com/web54devco' target='_blank' >
+          <div>Buy Me A Coffee</div>
+        </button>
       </div>
         {
           gameStatus ?

@@ -40,7 +40,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     font-size: 1rem;
-    width: 40%;
+    width: 65%;
     margin-bottom: 1rem;
     background-color: #ffffff;
     padding: 0 1rem;
@@ -63,6 +63,18 @@
 
 .News li {
     margin-bottom: 10px;
+}
+
+.SupportBtn {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 1rem;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #008080;
+    color: #ffffff;
+    z-index: 100;
+    margin: 1rem;
 }
 
 .RealVisContainer {
