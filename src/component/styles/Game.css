@@ -72,9 +72,16 @@
     border: 2px solid #000000;
     border-radius: 10px;
     background-color: #008080;
-    color: #ffffff;
     z-index: 100;
     margin: 1rem;
+    cursor: pointer;
+    box-shadow: -3px 5px 0 #000000;
+}
+
+.SupportBtn div {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .RealVisContainer {

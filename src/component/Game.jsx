@@ -79,10 +79,12 @@ const Game = () => {
           <li>The red input up top is a dev console for testers and devs to make sure the states are charging to the correct values and at the right times</li>
           <li className='warning'><b>So much more to come but there may be a bit of a break between updates</b></li>
         </ol>
-        <button className='SupportBtn' src='https://ko-fi.com/web54devco' target='_blank' >
-          Buy Me A Coffee
-        </button>
-      </div>
+        <a className='SupportBtn' href='https://ko-fi.com/web54devco' target='_blank' >
+          <div>
+            Buy Me A Coffee
+          </div>
+        </a>
+        </div>
         {
           gameStatus ?
             <div className="StartGame Btn" onClick={InitializeGame}>
