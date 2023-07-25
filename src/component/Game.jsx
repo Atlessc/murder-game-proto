@@ -12,9 +12,9 @@ import { characters } from './CharacterObjects';
 import DevConsole from './DevConsole';
 import Timer from './Timer';
 import PlayerChangeRoom from './RoomChanger';
+import CharacterMover from './CharacterMover';
 
 const Game = () => {
-  const gameStart = useStore(state => state.gameStart);
   const initializeGame = useStore(state => state.initializeGame);
   const showNotepad = useStore(state => state.showNotepad);
   const setMsChar = useStore(state => state.setMsChar);
@@ -31,27 +31,29 @@ const Game = () => {
   const gameStatus = useStore(state => state.gameStatus);
   const noteSuspects = useStore(state => state.noteSuspects);
   const roomMenu = useStore(state => state.roomMenu);
+  const successRate = useStore(state => state.successRate);
+  const moveAttempts = useStore(state => state.moveAttempts);
 
 
 
 
-  useEffect(() => {
-    if (gameStart === true) {
-      // Run the moveCharacters function every 30 seconds
-      const intervalId = setInterval(() => {
-        moveCharacters(characterRoomTracker, character => {
-          // Find the character object with the given name
-          const characterObject = characters.find(c => c.name === character);
+  // useEffect(() => {
+  //   if (gameStatus === true) {
+  //     // Run the moveCharacters function every 30 seconds
+  //     const intervalId = setInterval(() => {
+  //       moveCharacters(characterRoomTracker, character => {
+  //         // Find the character object with the given name
+  //         const characterObject = characters.find(c => c.name === character);
 
-          // Return the value of the currBeingInterviewed property
-          return characterObject.currBeingInterviewed;
-        });
-      }, 30000);
+  //         // Return the value of the currBeingInterviewed property
+  //         return characterObject.currBeingInterviewed;
+  //       });
+  //     }, 30000);
 
-      // Clean up the interval when the component unmounts
-      return () => clearInterval(intervalId);
-    }
-  }, [gameStart, characterRoomTracker]);
+  //     // Clean up the interval when the component unmounts
+  //     return () => clearInterval(intervalId);
+  //   }
+  // }, [gameStatus, characterRoomTracker]);
 
   const Test = () => {
     console.log(characterRoomTracker);
@@ -62,6 +64,8 @@ const Game = () => {
     console.log({gameStatus})
     console.log({noteSuspects})
     console.log({roomMenu})
+    console.log({successRate})
+    console.log({moveAttempts})
 
   };
 
@@ -85,6 +89,7 @@ const Game = () => {
           </div>
         </a>
         </div>
+        {/* <CharacterMover gameStatus={gameStatus} /> */}
         {
           gameStatus ?
             <div className="StartGame Btn" onClick={InitializeGame}>

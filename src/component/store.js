@@ -22,6 +22,8 @@ const useStore = create(set => ({
   playerRoom: '',
   noteNotes: '',
   roomMenu: false,
+  successRate: '0',
+  moveAttempts: '0',
   noteSuspects: [],
   noteRooms: [],
   noteWeapons: [],
@@ -49,6 +51,8 @@ const useStore = create(set => ({
   setNoteSuspects: value => set({ noteSuspects: value }),
   setNoteNotes: value => set({ noteNotes: value }),
   setRoomMenu: state => set({ roomMenu: state }),
+  setSuccessRate: value => set({ successRate: value }),
+  setMoveAttempts: value => set({ moveAttempts: value }),
 }));
 
 export default useStore;
