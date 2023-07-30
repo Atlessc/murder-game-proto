@@ -18,7 +18,7 @@
             "name": "Ms. Audrey Montague",
             "nickname": "Ms. Montague",
             "role": "Suspect",
-            "dialogFile": "src/component/Characters/1-Alfred-Parker.json"
+            "dialogFile": "src/component/Characters/1-Audrey-Montague.json"
         },
         {
             "id": 2,

@@ -1,0 +1,55 @@
+{
+    "name": "Arsenic-Laced Wine",
+      "variables": [
+        {
+            "variableID": 1,
+            "name": "",
+            "probability": "",
+            "contextualDependencies": []
+        },
+        {
+            "variableID": 2,
+            "name": "",
+            "probability": "",
+            "contextualDependencies": []
+        },
+        {
+            "variableID": 3,
+            "name": "",
+            "probability": "",
+            "contextualDependencies": []
+        },
+        {
+            "variableID": 4,
+            "name": "",
+            "probability": "",
+            "contextualDependencies": []
+        }
+      ],
+    "Adjectives": [
+        {
+            "adjectiveID": 1,
+            "name": "",
+            "probability": "",
+            "contextualDependencies": []
+        },
+        {
+            "adjectiveID": 2,
+            "name": "",
+            "probability": "",
+            "contextualDependencies": []
+        },
+        {
+            "adjectiveID": 3,
+            "name": "",
+            "probability": "",
+            "contextualDependencies": []
+        },
+        {
+            "adjectiveID": 4,
+            "name": "",
+            "probability": "",
+            "contextualDependencies": []
+        }
+    ]
+}

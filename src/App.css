@@ -5,6 +5,8 @@
   padding: 1.5rem;
   text-align: center;
   overflow: hidden;
+  font-family: monospace;
+  font-size: 16px;
 }
 
 .AppContainer {

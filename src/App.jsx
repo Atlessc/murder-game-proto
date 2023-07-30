@@ -6,6 +6,7 @@ import useStore from './component/store';
 import HowTo from './component/HowTo';
 import Img1 from './assets/pause.png'
 import Img2 from './assets/play.png'
+// import { pauseMoveTimeout, resumeMoveTimeout } from './component/gameMechanics';
 
 function App() {
 
@@ -18,9 +19,11 @@ function App() {
   const ToggleGameStatus = () => {
     if (useStore.getState().gameStatus === 'Active') {
       useStore.setState({gameStatus: 'Paused'})
+      // pauseMoveTimeout()
       console.log(`${GameStatus}`)
     } else if (useStore.getState().gameStatus === 'Paused') {
       useStore.setState({gameStatus: 'Active'})
+      // resumeMoveTimeout()
       console.log(`${GameStatus}`)
     }
   }

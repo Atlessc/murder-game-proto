@@ -1,62 +1,86 @@
 // Game.jsx
-import React, { useEffect } from 'react';
+import React from 'react';
 import './styles/Game.css';
 import './styles/Overlay.css';
 import ActionMenu from './ActionMenu';
 import DialogBox from './DialogBox';
 import Notepad from './Notepad';
-import POV from './POV';
 import useStore from './store';
-import { InitializeGame, moveCharacters } from './gameMechanics';
-import { characters } from './CharacterObjects';
+import { InitializeGame } from './gameMechanics';
 import DevConsole from './DevConsole';
 import Timer from './Timer';
 import PlayerChangeRoom from './RoomChanger';
-import CharacterMover from './CharacterMover';
+import data from './data/GameItems.json';
+
+const characters = data.Characters;
+const rooms = data.Rooms;
 
 const Game = () => {
-  const initializeGame = useStore(state => state.initializeGame);
-  const showNotepad = useStore(state => state.showNotepad);
-  const setMsChar = useStore(state => state.setMsChar);
-  const setMsRoom = useStore(state => state.setMsRoom);
-  const setMsWeapon = useStore(state => state.setMsWeapon);
-  const setPlayerRoom = useStore(state => state.setPlayerRoom);
-  const characterRoomTracker = useStore(state => state.characterRoomTracker);
-  const placeCharactersInRooms = useStore(state => state.placeCharactersInRooms);
-  const msRoom = useStore(state => state.msRoom);
-  const msChar = useStore(state => state.msChar);
-  const msWeapon = useStore(state => state.msWeapon);
-  const msVictim = useStore(state => state.msVictim);
-  const playerRoom = useStore(state => state.playerRoom);
-  const gameStatus = useStore(state => state.gameStatus);
-  const noteSuspects = useStore(state => state.noteSuspects);
-  const roomMenu = useStore(state => state.roomMenu);
-  const successRate = useStore(state => state.successRate);
-  const moveAttempts = useStore(state => state.moveAttempts);
+  const {
+    showNotepad,
+    characterRoomTracker,
+    msRoom,
+    msChar,
+    msWeapon,
+    msVictim,
+    playerRoom,
+    gameStatus,
+    noteSuspects,
+    roomMenu,
+    charMoved,
+    setCharMoved,
+    setCharacterRoomTracker,
+  } = useStore(state => ({
+    showNotepad: state.showNotepad,
+    characterRoomTracker: state.characterRoomTracker,
+    msRoom: state.msRoom,
+    msChar: state.msChar,
+    msWeapon: state.msWeapon,
+    msVictim: state.msVictim,
+    playerRoom: state.playerRoom,
+    gameStatus: state.gameStatus,
+    noteSuspects: state.noteSuspects,
+    roomMenu: state.roomMenu,
+    charMoved: state.charMoved,
+    setCharMoved: state.setCharMoved,
+    setCharacterRoomTracker: state.setCharacterRoomTracker,
+  }));
 
+  function moveCharacter(characterRoomTracker, characters, charMoved, setCharMoved) {
+    // Get the character based on the charMoved value
+    const character = characters[charMoved];
 
+    // Find the current room of the character
+    let currentRoom;
+    for (const [room, charactersInRoom] of Object.entries(characterRoomTracker)) {
+      if (charactersInRoom.includes(character.name)) {
+        currentRoom = room;
+        break;
+      }
+    }
 
+    // Create a list of available rooms
+    let roomsAvailable = Object.keys(characterRoomTracker).filter(room => room !== currentRoom);
 
-  // useEffect(() => {
-  //   if (gameStatus === true) {
-  //     // Run the moveCharacters function every 30 seconds
-  //     const intervalId = setInterval(() => {
-  //       moveCharacters(characterRoomTracker, character => {
-  //         // Find the character object with the given name
-  //         const characterObject = characters.find(c => c.name === character);
+    // Shuffle the available rooms
+    for (let i = roomsAvailable.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [roomsAvailable[i], roomsAvailable[j]] = [roomsAvailable[j], roomsAvailable[i]];
+    }
 
-  //         // Return the value of the currBeingInterviewed property
-  //         return characterObject.currBeingInterviewed;
-  //       });
-  //     }, 30000);
+    // Choose a random room
+    const newRoom = roomsAvailable[Math.floor(Math.random() * roomsAvailable.length)];
 
-  //     // Clean up the interval when the component unmounts
-  //     return () => clearInterval(intervalId);
-  //   }
-  // }, [gameStatus, characterRoomTracker]);
+    // Move the character to the new room
+    characterRoomTracker[currentRoom] = characterRoomTracker[currentRoom].filter(name => name !== character.name);
+    characterRoomTracker[newRoom].push(character.name);
+    console.log(`Moving ${character.name} from ${currentRoom} to ${newRoom}`);
+
+    // Update charMoved value using setCharMoved
+    setCharMoved((charMoved + 1) % characters.length);
+  }
 
   const Test = () => {
-    console.log(characterRoomTracker);
     console.log(`You are in the ${playerRoom}`);
     console.log(`The Murderer is ${msChar}`);
     console.log(`The Murder happened in the ${msRoom}`);
@@ -64,10 +88,12 @@ const Game = () => {
     console.log({gameStatus})
     console.log({noteSuspects})
     console.log({roomMenu})
-    console.log({successRate})
-    console.log({moveAttempts})
-
+    console.log(characterRoomTracker);
   };
+
+  function TestMover() {
+    moveCharacter(characterRoomTracker, characters, charMoved, setCharMoved, setCharacterRoomTracker);
+  }
 
   return (
     <div className='POV'>
@@ -83,21 +109,23 @@ const Game = () => {
           <li>The red input up top is a dev console for testers and devs to make sure the states are charging to the correct values and at the right times</li>
           <li className='warning'><b>So much more to come but there may be a bit of a break between updates</b></li>
         </ol>
+        <div className='supBtn'>
         <a className='SupportBtn' href='https://ko-fi.com/web54devco' target='_blank' >
           <div className='message'>
             <div className='emoji'>👽</div>Support My Work<div className='emoji'>👾</div>
           </div>
         </a>
         </div>
-        {/* <CharacterMover gameStatus={gameStatus} /> */}
+        </div>
         {
           gameStatus ?
             <div className="StartGame Btn" onClick={InitializeGame}>
               Start Game
             </div>
-          :
+            :
             null
         }
+        <div className='TestMover Btn' onClick={TestMover}>Test Mover</div>
         <div className='Test Btn' onClick={Test}>Test</div>
         {showNotepad ?
           <div>

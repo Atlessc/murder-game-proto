@@ -8,18 +8,20 @@ const ActionMenu = () => {
   const toggleActionMenu = useStore(state => state.toggleActionMenu);
   const showNotepad = useStore(state => state.showNotepad);
   const toggleNotepad = useStore(state => state.toggleNotepad);
-  const roomMenu = useStore(state => state.showRooms);
+  const roomMenu = useStore(state => state.roomMenu);
   const setRoomMenu = useStore(state => state.setRoomMenu);
   const notepadBtn = useStore(state => state.notepadBtn);
 
   const ToggleNotepad = () => {
     toggleNotepad(!showNotepad);
-    toggleActionMenu(!actionMenu);
+    toggleActionMenu(false);
+    setRoomMenu(false);
   };
 
   const ToggleRoom = () => {
     setRoomMenu(!roomMenu);
-    toggleActionMenu(!actionMenu);
+    toggleActionMenu(false);
+    toggleNotepad(false);
   };
 
   if (actionMenu === false) {
@@ -38,10 +40,18 @@ const ActionMenu = () => {
     <>
         <div className="ActionMenu">
           <div className={`ActionItems Open`} onClick={ToggleNotepad}>
-            {showNotepad ? <div>Close Note</div> : <div>Notepad</div>}
+            {showNotepad ?
+            <div>Close Note</div>
+            :
+            <div>Notepad</div>
+            }
           </div>
-          <div className={`ActionItems ${roomMenu ? 'Close' : 'Open'}`} onClick={ToggleRoom}>
-            {roomMenu ? <div>Close Room</div> : <div>Rooms</div>}
+          <div className={`ActionItems Open`} onClick={ToggleRoom}>
+            {roomMenu ?
+            <div>Close Rm</div>
+            :
+            <div>Rooms</div>
+            }
           </div>
           <div className="ActionItems Open">Interview</div>
           <div className="ActionItems Open">Accuse</div>

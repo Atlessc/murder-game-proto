@@ -1,5 +1,5 @@
 // store.js
-import {create} from 'zustand';
+import { create } from 'zustand';
 import data from './data/GameItems.json';
 
 const characters = data.Characters;
@@ -22,8 +22,6 @@ const useStore = create(set => ({
   playerRoom: '',
   noteNotes: '',
   roomMenu: false,
-  successRate: '0',
-  moveAttempts: '0',
   noteSuspects: [],
   noteRooms: [],
   noteWeapons: [],
@@ -36,6 +34,40 @@ const useStore = create(set => ({
     'Living Room': [],
     'Master Bedroom': []
   },
+  characterStates: {
+    'Ms. Audrey Montague': {
+      beingInterviewed: false,
+    },
+    'Lady Alice Underwood':  {
+      beingInterviewed: false,
+    },
+    'Duke Alfred Parker':  {
+      beingInterviewed: false,
+    },
+    'Miss Daisy Pennington':  {
+      beingInterviewed: false,
+    },
+    'Sir Frederick Caldwell':  {
+      beingInterviewed: false,
+    },
+    'Professor Anna Thorne':  {
+      beingInterviewed: false,
+    },
+    'Madame Lucy Danvers':  {
+      beingInterviewed: false,
+    },
+    'Colonel Henry Kensington':  {
+      beingInterviewed: false,
+    },
+    'Mr. Richard Albright':  {
+      beingInterviewed: false,
+    },
+    'Lord Samuel Carter':  {
+      beingInterviewed: false,
+    },
+
+  },
+  charMoved: 0,
   togglePopUp: () => set(state => ({ popUp: !state.popUp })),
   toggleDialog: () => set(state => ({ dialog: !state.dialog })),
   toggleActionMenu: () => set(state => ({ actionMenu: !state.actionMenu })),
@@ -48,11 +80,10 @@ const useStore = create(set => ({
   setPlayerRoom: value => set(({ playerRoom: value })),
   setNoteRooms: value => set({ noteRooms: value }),
   setNoteWeapons: value => set({ noteWeapons: value }),
-  setNoteSuspects: value => set({ noteSuspects: value }),
-  setNoteNotes: value => set({ noteNotes: value }),
-  setRoomMenu: state => set({ roomMenu: state }),
-  setSuccessRate: value => set({ successRate: value }),
-  setMoveAttempts: value => set({ moveAttempts: value }),
+  setNoteSuspects: value => set({ noteSuspects:value }),
+  setNoteNotes:value=>set({noteNotes:value}),
+  setRoomMenu : state=>set({roomMenu : state}),
+  setCharMoved: value => set({ charMoved: value })
 }));
 
 export default useStore;
