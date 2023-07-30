@@ -43,6 +43,8 @@ h3 {
     flex: 0 1 calc(20% - 0.8rem);
     height: 2rem;
     width: 30%;
+    color: #FFFFFF;
+    background-color: #800020;
     padding: 3px;
     margin: 0.2rem;
     font-weight: bold;
