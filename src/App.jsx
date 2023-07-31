@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
 import "./App.css"
-import WelcomePopup from "./component/WelcomePopUp"
-import Game from "./component/Game"
-import useStore from "./component/store"
-import HowTo from "./component/HowTo"
+import WelcomePopup from "./components/WelcomePopUp"
+import Game from "./components/Game"
+import useStore from "./components/store"
+import HowTo from "./components/HowTo"
 import Img1 from "./assets/pause.png"
 import Img2 from "./assets/play.png"
-// import { pauseMoveTimeout, resumeMoveTimeout } from './component/gameMechanics';
+// import { pauseMoveTimeout, resumeMoveTimeout } from './components/gameMechanics';
 
 function App() {
   const [showPopUp, setShowPopUp] = useState(true)

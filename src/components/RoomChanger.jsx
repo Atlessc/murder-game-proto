@@ -1,18 +1,16 @@
-import React from "react";
-import useStore from "./store";
-import "./styles/RoomChangeMenu.css";
-import data from "./data/GameItems.json";
-
-
+import React from "react"
+import useStore from "./store"
+import "./styles/RoomChangeMenu.css"
+import data from "../data/GameItems.json"
 
 export default function RoomChanger() {
-  const { playerRoom, setPlayerRoom, setRoomMenu } = useStore();
+  const { playerRoom, setPlayerRoom, setRoomMenu } = useStore()
   const handleNewRoomSelection = (roomName) => {
-    setPlayerRoom(roomName);
-    setRoomMenu(false);
-  };
+    setPlayerRoom(roomName)
+    setRoomMenu(false)
+  }
 
-  const rooms = data.Rooms;
+  const rooms = data.Rooms
 
   return (
     <div className="ChangeRoomMenu">
@@ -23,11 +21,12 @@ export default function RoomChanger() {
             key={room.id}
             className="RoomItem"
             onClick={() => handleNewRoomSelection(room.name)}
-            disabled={room.name === playerRoom}>
+            disabled={room.name === playerRoom}
+          >
             {room.name}
           </div>
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
