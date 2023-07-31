@@ -1,33 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import useStore from './store';
-import './styles/Timer.css';
+import { useState, useEffect } from "react"
+import useStore from "./store"
+import "./styles/Timer.css"
 
 const Timer = () => {
-  const [timeLeft, setTimeLeft] = useState(10 * 60);
-  const gameStatus = useStore(state => state.gameStatus);
+  const [timeLeft, setTimeLeft] = useState(10 * 60)
+  const gameStatus = useStore((state) => state.gameStatus)
 
   useEffect(() => {
-    if (gameStatus === 'Active') {
-      console.log('timer started');
+    if (gameStatus === "Active") {
+      console.log("timer started")
       const intervalId = setInterval(() => {
-        setTimeLeft(timeLeft => {
+        setTimeLeft((timeLeft) => {
           if (timeLeft === 1) {
-            clearInterval(intervalId);
+            clearInterval(intervalId)
           }
-          return timeLeft - 1;
-        });
-      }, 1000);
-      return () => clearInterval(intervalId);
+          return timeLeft - 1
+        })
+      }, 1000)
+      return () => clearInterval(intervalId)
     }
-  }, [gameStatus]);
+  }, [gameStatus])
 
   return (
-    <div className='Timer'>
-    <div className='Time'>
-      Time left: {Math.floor(timeLeft / 60)}:{timeLeft % 60 < 10 ? `0${timeLeft % 60}` : timeLeft % 60}
+    <div className="Timer">
+      <div className="Time">
+        Time left: {Math.floor(timeLeft / 60)}:
+        {timeLeft % 60 < 10 ? `0${timeLeft % 60}` : timeLeft % 60}
+      </div>
     </div>
-    </div>
-  );
-};
+  )
+}
 
-export default Timer;
+export default Timer

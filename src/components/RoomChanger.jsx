@@ -1,4 +1,3 @@
-import React from "react"
 import useStore from "./store"
 import "./styles/RoomChangeMenu.css"
 import data from "../data/GameItems.json"

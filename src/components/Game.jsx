@@ -1,5 +1,4 @@
 // Game.jsx
-import React from "react"
 import "./styles/Game.css"
 import "./styles/Overlay.css"
 import ActionMenu from "./ActionMenu"
