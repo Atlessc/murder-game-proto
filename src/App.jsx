@@ -6,7 +6,7 @@ import useStore from "./components/store"
 import HowTo from "./components/HowTo"
 import Img1 from "./assets/pause.png"
 import Img2 from "./assets/play.png"
-// import { pauseMoveTimeout, resumeMoveTimeout } from './components/gameMechanics';
+// import { pauseMoveTimeout, resumeMoveTimeout } from './utilities/gameMechanics';
 
 function App() {
   const [showPopUp, setShowPopUp] = useState(true)

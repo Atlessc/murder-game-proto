@@ -1,6 +1,6 @@
 // gameMechanics.js
 import data from "../data/GameItems.json"
-import useStore from "./store"
+import useStore from "../components/store"
 
 const characters = data.Characters
 const rooms = data.Rooms
