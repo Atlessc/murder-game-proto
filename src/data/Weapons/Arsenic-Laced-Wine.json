@@ -3,20 +3,20 @@
       "variables": [
         {
             "variableID": 1,
-            "name": "",
-            "probability": "",
-            "contextualDependencies": []
+            "name": "Was {msChar} Seen with the vial?",
+            "probability": "0.4",
+            "contextualDependencies": [1]
         },
         {
             "variableID": 2,
-            "name": "",
-            "probability": "",
-            "contextualDependencies": []
+            "name": "Took too long to die?",
+            "probability": "0.3",
+            "contextualDependencies": [1]
         },
         {
             "variableID": 3,
-            "name": "",
-            "probability": "",
+            "name": "foamed at the mouth?",
+            "probability": "0.2",
             "contextualDependencies": []
         },
         {
@@ -29,13 +29,13 @@
     "Adjectives": [
         {
             "adjectiveID": 1,
-            "name": "",
-            "probability": "",
-            "contextualDependencies": []
+            "name": "samll and green, shoney like glass",
+            "probability": "0.4",
+            "contextualDependencies": [1,2]
         },
         {
             "adjectiveID": 2,
-            "name": "",
+            "name": "saw {msChar} holding 2 wine glasses, one the looked off with ",
             "probability": "",
             "contextualDependencies": []
         },
