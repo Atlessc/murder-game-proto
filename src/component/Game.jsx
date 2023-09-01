@@ -112,13 +112,6 @@ const Game = () => {
       <div className='News'>
         <h3>Thank you for visting! (last update 07/23/2023)</h3>
         <p className='warning'>Warning: if the layout looks weird, set the window to 1200x800</p>
-        <p><b>We are still working on everything but if you want to see what we have already, here's a list of what is working:</b></p>
-        <ol>
-          <li>The Room button will change the player's current room</li>
-          <li>The notepad works and retains the notes!</li>
-          <li>The red input up top is a dev console for testers and devs to make sure the states are charging to the correct values and at the right times</li>
-          <li className='warning'><b>So much more to come but there may be a bit of a break between updates</b></li>
-        </ol>
         <div className='supBtn'>
         <a className='SupportBtn' href='https://ko-fi.com/web54devco' target='_blank' >
           <div className='message'>
