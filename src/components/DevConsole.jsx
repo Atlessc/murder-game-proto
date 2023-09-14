@@ -26,7 +26,7 @@ const DevConsole = ({ actions }) => {
 
   const handlePasswordChange = (event) => {
     setPassword(event.target.value)
-    if (event.target.value === "DevCo.Console") {
+    if (event.target.value === "Dev") {
       setShowConsole(true)
     }
   }
